@@ -105,6 +105,9 @@
         <jointname>q3</jointname>
         <type>T3</type>
         <nature>independent</nature>
+        <initialvalue>
+          <q>-0.6</q>
+        </initialvalue>
         <graphics>
           <x2D>
             <position>
@@ -610,7 +613,7 @@
       <joint>
         <jointname>Joint_19</jointname>
         <type>R1</type>
-        <nature>dependent</nature>
+        <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
@@ -769,6 +772,43 @@
         <Iyy>0.75</Iyy>
         <Izz>0.45</Izz>
       </inertia>
+      <point>
+        <pointname>Pt_Contact</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>256.0</x>
+              <y>148.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+        <extforce name="F_pneu_av_g" Pos="true" Rot="true" Vit="true" Om="true" Acc="true" Omp="true">
+          <x3D>
+            <force show="true" showCompX="true" showCompY="true" showCompZ="true" showResultant="true" drawPosition="end">
+              <x_color R="255" G="0" B="0" />
+              <y_color R="0" G="255" B="0" />
+              <z_color R="0" G="0" B="255" />
+              <resultant_color R="0" G="0" B="0" />
+              <diameter>0.05</diameter>
+              <scale>1.0</scale>
+            </force>
+            <torque showCompX="true" showCompY="true" showCompZ="true" showResultant="true" drawPosition="end">
+              <x_color R="255" G="0" B="0" />
+              <y_color R="0" G="255" B="0" />
+              <z_color R="0" G="0" B="255" />
+              <resultant_color R="0" G="0" B="0" />
+              <diameter>0.1</diameter>
+              <scale>1.0</scale>
+            </torque>
+          </x3D>
+        </extforce>
+      </point>
       <graphics>
         <x2D>
           <position>
@@ -930,7 +970,7 @@
       <joint>
         <jointname>Joint_2</jointname>
         <type>R1</type>
-        <nature>dependent</nature>
+        <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
@@ -1073,8 +1113,8 @@
         <graphics>
           <x2D>
             <position>
-              <x>1278.0</x>
-              <y>161.0</y>
+              <x>1283.0</x>
+              <y>147.0</y>
             </position>
           </x2D>
           <x3D>
@@ -1089,11 +1129,48 @@
         <Iyy>0.75</Iyy>
         <Izz>0.45</Izz>
       </inertia>
+      <point>
+        <pointname>Pt_Contact</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>1346.0</x>
+              <y>140.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+        <extforce name="F_pneu_av_d" Pos="true" Rot="true" Vit="true" Om="true" Acc="true" Omp="true">
+          <x3D>
+            <force show="true" showCompX="true" showCompY="true" showCompZ="true" showResultant="true" drawPosition="end">
+              <x_color R="255" G="0" B="0" />
+              <y_color R="0" G="255" B="0" />
+              <z_color R="0" G="0" B="255" />
+              <resultant_color R="0" G="0" B="0" />
+              <diameter>0.05</diameter>
+              <scale>1.0</scale>
+            </force>
+            <torque showCompX="true" showCompY="true" showCompZ="true" showResultant="true" drawPosition="end">
+              <x_color R="255" G="0" B="0" />
+              <y_color R="0" G="255" B="0" />
+              <z_color R="0" G="0" B="255" />
+              <resultant_color R="0" G="0" B="0" />
+              <diameter>0.1</diameter>
+              <scale>1.0</scale>
+            </torque>
+          </x3D>
+        </extforce>
+      </point>
       <graphics>
         <x2D>
           <position>
-            <x>40.0</x>
-            <y>-12.0</y>
+            <x>59.0</x>
+            <y>-4.0</y>
           </position>
           <name_pos>
             <x>0.0</x>
@@ -1106,8 +1183,8 @@
           </size>
           <control_points>
             <control_point>
-              <x>73.0</x>
-              <y>-12.0</y>
+              <x>92.0</x>
+              <y>-4.0</y>
             </control_point>
           </control_points>
           <angle>0.0</angle>
@@ -1548,7 +1625,7 @@
       <joint>
         <jointname>Joint_9</jointname>
         <type>R2</type>
-        <nature>dependent</nature>
+        <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
@@ -1653,7 +1730,7 @@
       <joint>
         <jointname>Joint_10</jointname>
         <type>R2</type>
-        <nature>dependent</nature>
+        <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
@@ -1781,7 +1858,7 @@
       <point>
         <pointname>Point_0</pointname>
         <coordinates>
-          <x>0.0</x>
+          <x>-0.1</x>
           <y>0.0</y>
           <z>0.17</z>
         </coordinates>
@@ -2286,6 +2363,43 @@
         <Iyy>0.75</Iyy>
         <Izz>0.45</Izz>
       </inertia>
+      <point>
+        <pointname>Point_0</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>255.0</x>
+              <y>660.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+        <extforce name="F_pneu_ar_g" Pos="true" Rot="true" Vit="true" Om="true" Acc="true" Omp="true">
+          <x3D>
+            <force show="true" showCompX="true" showCompY="true" showCompZ="true" showResultant="true" drawPosition="end">
+              <x_color R="255" G="0" B="0" />
+              <y_color R="0" G="255" B="0" />
+              <z_color R="0" G="0" B="255" />
+              <resultant_color R="0" G="0" B="0" />
+              <diameter>0.05</diameter>
+              <scale>1.0</scale>
+            </force>
+            <torque showCompX="true" showCompY="true" showCompZ="true" showResultant="true" drawPosition="end">
+              <x_color R="255" G="0" B="0" />
+              <y_color R="0" G="255" B="0" />
+              <z_color R="0" G="0" B="255" />
+              <resultant_color R="0" G="0" B="0" />
+              <diameter>0.1</diameter>
+              <scale>1.0</scale>
+            </torque>
+          </x3D>
+        </extforce>
+      </point>
       <graphics>
         <x2D>
           <position>
@@ -2660,6 +2774,43 @@
         <Iyy>0.75</Iyy>
         <Izz>0.45</Izz>
       </inertia>
+      <point>
+        <pointname>Point_0</pointname>
+        <coordinates>
+          <x>0.0</x>
+          <y>0.0</y>
+          <z>0.0</z>
+        </coordinates>
+        <graphics>
+          <x2D>
+            <position>
+              <x>1314.0</x>
+              <y>648.0</y>
+            </position>
+          </x2D>
+          <x3D />
+        </graphics>
+        <extforce name="F_pneu_ar_d" Pos="true" Rot="true" Vit="true" Om="true" Acc="true" Omp="true">
+          <x3D>
+            <force show="true" showCompX="true" showCompY="true" showCompZ="true" showResultant="true" drawPosition="end">
+              <x_color R="255" G="0" B="0" />
+              <y_color R="0" G="255" B="0" />
+              <z_color R="0" G="0" B="255" />
+              <resultant_color R="0" G="0" B="0" />
+              <diameter>0.05</diameter>
+              <scale>1.0</scale>
+            </force>
+            <torque showCompX="true" showCompY="true" showCompZ="true" showResultant="true" drawPosition="end">
+              <x_color R="255" G="0" B="0" />
+              <y_color R="0" G="255" B="0" />
+              <z_color R="0" G="0" B="255" />
+              <resultant_color R="0" G="0" B="0" />
+              <diameter>0.1</diameter>
+              <scale>1.0</scale>
+            </torque>
+          </x3D>
+        </extforce>
+      </point>
       <graphics>
         <x2D>
           <position>
@@ -2804,7 +2955,7 @@
       <joint>
         <jointname>Joint_31</jointname>
         <type>R2</type>
-        <nature>dependent</nature>
+        <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
@@ -2909,7 +3060,7 @@
       <joint>
         <jointname>Joint_33</jointname>
         <type>R1</type>
-        <nature>dependent</nature>
+        <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
@@ -3014,7 +3165,7 @@
       <joint>
         <jointname>Joint_32</jointname>
         <type>R2</type>
-        <nature>dependent</nature>
+        <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
@@ -3102,7 +3253,7 @@
       <joint>
         <jointname>Joint_34</jointname>
         <type>R1</type>
-        <nature>dependent</nature>
+        <nature>independent</nature>
         <graphics>
           <x2D>
             <position>
@@ -3204,12 +3355,12 @@
     <ball>
       <name>Cut_0</name>
       <endpoint1>
-        <bodyname>Bras_inf_AV_D</bodyname>
+        <bodyname>Bras_inf_AR_G</bodyname>
         <pointname>Point_0</pointname>
       </endpoint1>
       <endpoint2>
-        <bodyname>Fusee_AV_D</bodyname>
-        <pointname>Pt_Ball_Bras_Inf_AV_D</pointname>
+        <bodyname>Fusee_AR_G</bodyname>
+        <pointname>Point_0</pointname>
       </endpoint2>
       <graphics>
         <x3D>
@@ -3219,102 +3370,6 @@
     </ball>
     <ball>
       <name>Cut_1</name>
-      <endpoint1>
-        <bodyname>Bielle_Direction_D</bodyname>
-        <pointname>Point_0</pointname>
-      </endpoint1>
-      <endpoint2>
-        <bodyname>Fusee_AV_D</bodyname>
-        <pointname>Pt_Direction_D</pointname>
-      </endpoint2>
-      <graphics>
-        <x3D>
-          <shown />
-        </x3D>
-      </graphics>
-    </ball>
-    <ball>
-      <name>Cut_2</name>
-      <endpoint1>
-        <bodyname>Bielle_AV_D</bodyname>
-        <pointname>Point_0</pointname>
-      </endpoint1>
-      <endpoint2>
-        <bodyname>Bras_sup_av_d_1</bodyname>
-        <pointname>Pt_Ball</pointname>
-      </endpoint2>
-      <graphics>
-        <x3D>
-          <shown />
-        </x3D>
-      </graphics>
-    </ball>
-    <ball>
-      <name>Cut_3</name>
-      <endpoint1>
-        <bodyname>Bielle_AV_G</bodyname>
-        <pointname>Point_0</pointname>
-      </endpoint1>
-      <endpoint2>
-        <bodyname>Bras_sup_AV_G</bodyname>
-        <pointname>Point_1</pointname>
-      </endpoint2>
-      <graphics>
-        <x3D>
-          <shown />
-        </x3D>
-      </graphics>
-    </ball>
-    <ball>
-      <name>Cut_4</name>
-      <endpoint1>
-        <bodyname>Bielle_Direction_G</bodyname>
-        <pointname>Point_0</pointname>
-      </endpoint1>
-      <endpoint2>
-        <bodyname>Fusee_AV_G</bodyname>
-        <pointname>Pt_Direction_G</pointname>
-      </endpoint2>
-      <graphics>
-        <x3D>
-          <shown />
-        </x3D>
-      </graphics>
-    </ball>
-    <ball>
-      <name>Cut_5</name>
-      <endpoint1>
-        <bodyname>Bras_inf_AV_G</bodyname>
-        <pointname>Point_0</pointname>
-      </endpoint1>
-      <endpoint2>
-        <bodyname>Fusee_AV_G</bodyname>
-        <pointname>Pt_Ball_Bras_Inf_AV_G</pointname>
-      </endpoint2>
-      <graphics>
-        <x3D>
-          <shown />
-        </x3D>
-      </graphics>
-    </ball>
-    <ball>
-      <name>Cut_6</name>
-      <endpoint1>
-        <bodyname>Fusee_AR_G</bodyname>
-        <pointname>Point_0</pointname>
-      </endpoint1>
-      <endpoint2>
-        <bodyname>Bras_inf_AR_G</bodyname>
-        <pointname>Point_0</pointname>
-      </endpoint2>
-      <graphics>
-        <x3D>
-          <shown />
-        </x3D>
-      </graphics>
-    </ball>
-    <ball>
-      <name>Cut_7</name>
       <endpoint1>
         <bodyname>Bras_inf_AR_D</bodyname>
         <pointname>Point_0</pointname>
@@ -3330,14 +3385,110 @@
       </graphics>
     </ball>
     <ball>
-      <name>Cut_8</name>
+      <name>Cut_2</name>
       <endpoint1>
-        <bodyname>Bielle_AR_G</bodyname>
-        <pointname>Pt_Ball_G</pointname>
+        <bodyname>Bras_inf_AV_G</bodyname>
+        <pointname>Point_0</pointname>
       </endpoint1>
       <endpoint2>
+        <bodyname>Fusee_AV_G</bodyname>
+        <pointname>Pt_Ball_Bras_Inf_AV_G</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </ball>
+    <ball>
+      <name>Cut_3</name>
+      <endpoint1>
+        <bodyname>Bras_inf_AV_D</bodyname>
+        <pointname>Point_0</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Fusee_AV_D</bodyname>
+        <pointname>Pt_Ball_Bras_Inf_AV_D</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </ball>
+    <ball>
+      <name>Cut_4</name>
+      <endpoint1>
         <bodyname>Bras_sup_AR_G</bodyname>
         <pointname>Pt_Recep_Barre_G</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Bielle_AR_G</bodyname>
+        <pointname>Pt_Ball_G</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </ball>
+    <ball>
+      <name>Cut_5</name>
+      <endpoint1>
+        <bodyname>Bras_sup_AR_D</bodyname>
+        <pointname>Pt_Recep_Barre_D</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Bielle_AR_D</bodyname>
+        <pointname>Point_0</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </ball>
+    <ball>
+      <name>Cut_6</name>
+      <endpoint1>
+        <bodyname>Bras_sup_AV_G</bodyname>
+        <pointname>Point_1</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Bielle_AV_G</bodyname>
+        <pointname>Point_0</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </ball>
+    <ball>
+      <name>Cut_7</name>
+      <endpoint1>
+        <bodyname>Bras_sup_av_d_1</bodyname>
+        <pointname>Pt_Ball</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Bielle_AV_D</bodyname>
+        <pointname>Point_0</pointname>
+      </endpoint2>
+      <graphics>
+        <x3D>
+          <shown />
+        </x3D>
+      </graphics>
+    </ball>
+    <ball>
+      <name>Cut_8</name>
+      <endpoint1>
+        <bodyname>Fusee_AV_G</bodyname>
+        <pointname>Pt_Direction_G</pointname>
+      </endpoint1>
+      <endpoint2>
+        <bodyname>Bielle_Direction_G</bodyname>
+        <pointname>Point_0</pointname>
       </endpoint2>
       <graphics>
         <x3D>
@@ -3348,12 +3499,12 @@
     <ball>
       <name>Cut_9</name>
       <endpoint1>
-        <bodyname>Bielle_AR_D</bodyname>
+        <bodyname>Bielle_Direction_D</bodyname>
         <pointname>Point_0</pointname>
       </endpoint1>
       <endpoint2>
-        <bodyname>Bras_sup_AR_D</bodyname>
-        <pointname>Pt_Recep_Barre_D</pointname>
+        <bodyname>Fusee_AV_D</bodyname>
+        <pointname>Pt_Direction_D</pointname>
       </endpoint2>
       <graphics>
         <x3D>
