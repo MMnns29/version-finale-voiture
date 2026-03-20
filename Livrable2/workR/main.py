@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # =========================================================
 # CHOIX DE LA SIMULATION
 # =========================================================
-simulation = "MRU"  # "MRU", "acceleration", "freinage", "dos_d_ane"
+simulation = "virage"  # "MRU", "acceleration", "freinage", "dos_d_ane" , "virage"
 
 print(f"Starting Mazda MX-5 MBS project! {simulation}")
 work_dir = os.path.dirname(os.path.abspath(__file__))
@@ -55,7 +55,8 @@ mbs_dirdyn.run()
 # =========================================================
 print("\n>> Injection des vitesses (MRU)...")
 
-vitesse_kmh = {"MRU": 36, "acceleration": 7, "freinage": 70, "dos_d_ane": 5}[simulation]
+vitesse_kmh = {"MRU": 36, "acceleration": 7, "freinage": 70, "dos_d_ane": 5, "virage": 36}[simulation]
+
 vitesse_ms = vitesse_kmh / 3.6  # Modification de la vitesse en mètres par seconde.
 
 mbs_data.qd[1] = vitesse_ms  # On applique vitesse_ms sur le châssis grace à q[1].
@@ -74,7 +75,7 @@ mbs_data.qd[30] = omega  # Roue AR_D
 # =========================================================
 print(f"\n>> LANCEMENT DU MRU ({vitesse_kmh} km/h)...")
 # On relance de t=2.0 à t=8.0 avec la sauvegarde activée
-mbs_dirdyn.set_options(dt0=1e-3, tf=8.0, save2file=1)
+mbs_dirdyn.set_options(dt0=1e-3, tf=10.0, save2file=1)
 mbs_dirdyn.run()
 
 print("\nSimulation terminée avec succès !")
@@ -105,6 +106,12 @@ if simulation == "dos_d_ane":
     # --- BLOC GRAPHE DOS D'ANE ---
     fig.suptitle(f'Réponse des Suspensions au Dos d\'âne ({vitesse_kmh} km/h)', fontsize=16)
     plot_save_path = os.path.join(results_dir, f"suspension_dos_d_ane_{vitesse_kmh}kmh.png")
+    
+    
+if simulation == "virage":
+    # --- BLOC GRAPHE VIRAGE ---
+    fig.suptitle(f'Réponse des Suspensions en Virage ({vitesse_kmh} km/h)', fontsize=16)
+    plot_save_path = os.path.join(results_dir, f"suspension_virage_{vitesse_kmh}kmh.png")    
 
 axs[0, 0].plot(time, q_av_g, color='blue')
 axs[0, 0].set_title('Avant Gauche (q7)')
