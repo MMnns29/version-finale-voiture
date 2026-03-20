@@ -10,12 +10,12 @@
 #
 #	http://www.robotran.be 
 #
-#	==> Generation Date: Sat Mar 14 21:52:06 2026
+#	==> Generation Date: Mon Mar 16 14:28:07 2026
 #	==> using automatic loading with extension .mbs 
 #
 #	==> Project name: Livrable2
 #
-#	==> Number of joints: 43
+#	==> Number of joints: 31
 #
 #	==> Function: F27 - Link Forces (3D)
 #
