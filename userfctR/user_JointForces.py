@@ -4,7 +4,7 @@ import numpy as np
 def user_JointForces(mbs_data, tsim):
     
     # TABLEAU DE BORD
-    enable_esp = False 
+    enable_esp = True 
     enable_abs = True   
 
     mbs_data.Qq[:] = 0.0
@@ -24,7 +24,7 @@ def user_JointForces(mbs_data, tsim):
     q_target = 0.0
     torque_rear = 0.0
     torque_front = 0.0
-    force_freinage = -1000.0 
+    force_freinage = -500.0 
 
     
     # =========================================================
@@ -113,7 +113,7 @@ def user_JointForces(mbs_data, tsim):
         q_target = np.clip(raw_q_target, -0.025, 0.025)
 
         # --- LES PÉDALES (Crash Test) ---
-        t_debut_frein = 2.0   
+        t_debut_frein = 3.0   
         t_fin_frein = 4.0     
         
         # On freine SEULEMENT si on est dans les temps ET que la voiture n'a pas été déclarée "arrêtée"
