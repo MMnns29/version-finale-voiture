@@ -1,0 +1,8 @@
+
+##############################################################
+#	file1b.gen 04/05/2026 16:27:45    messages
+##############################################################
+    Old current.gen /usr/local/robotran/users/LEPL1504/upload/file1b.gen loading
+Symbolic generation file : /usr/local/robotran/users/LEPL1504/upload/file1b.gen
+Project: /usr/local/robotran/users/LEPL1504/upload/upload.mbs
+F6 - Sensors Kinematics
